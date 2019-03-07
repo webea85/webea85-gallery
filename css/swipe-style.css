@@ -1,0 +1,272 @@
+/*----*/
+.work{
+	width:100%;
+	min-height:971px;
+	display:block;
+	text-align:center;
+	padding: 2em 0 2em;
+}
+.work-head h3{
+	color:#fff;
+	font-size:4em;
+	font-weight:300;
+}
+.work-head p{
+	color:#fff;
+	font-size:1.1em;
+	font-weight:300;
+	padding:1em 0 3em;
+	line-height: 1.5em;
+}
+/*----*/
+.by-type{
+	float:left;
+}
+.by-type h6{
+	margin: .3em 0 0 .6em;
+	font-size:1.3em;
+	color:#1a1a1a;
+	font-weight:600;
+	text-transform:uppercase;
+}
+#filters {
+	margin:0;
+	padding: 0;
+	list-style: none;
+	float:right;
+}
+#filters li {
+	display:inline-block;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: -o-inline-box;
+	display: -ms-inline-box;
+}
+#filters li span:hover {
+	color: #fff;
+	background:#f5c149;
+	border-radius:5px;
+}
+.work-top {
+	border-top: 1px solid #f39c12;
+	border-bottom: 1px solid #f39c12;
+	padding:1.5em 0;
+}
+#filters li span {
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+	color: #1a1a1a;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 10.3%;
+	display: none;
+	float: left;
+	overflow: hidden;
+	margin: 1.1%;
+}
+div#portfoliolist {
+	padding: 0px 0px;
+}	
+.portfolio-wrapper {
+	overflow:hidden;
+	position: relative !important;
+	cursor:pointer;
+	background: #dedede;
+	height: 135px;
+	border-radius: 5px;	
+}
+.portfolio-wrapper p{
+	color:#000;
+	font-size:11px;
+	height: 40px;
+	padding:5px 5px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.portfolio img {
+	max-width:100%;
+	height: 93px;
+	transition: all 300ms!important;
+	-webkit-transition: all 300ms!important;
+	-moz-transition: all 300ms!important;
+}
+.portfolio .label {
+	position: absolute;
+	width: 100%;
+	height:40px;
+	bottom:-40px;
+}
+.portfolio .label-bg {
+	background: #22B4B8;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.portfolio .label-text {
+	color:#fff;
+	position: relative;
+	z-index:500;
+	padding:5px 8px;
+}		
+.portfolio .text-category {
+	display:block;
+	font-size:9px;
+	font-size: 12px;
+	text-transform:uppercase;
+}
+.simple {
+	text-align: center;
+	padding: 5em 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	width:100%;
+	height:77%;
+	background:rgba(67, 73, 61, 0.3);
+}
+.simple label{
+	background: url(../images/plus.png) 0px 0px;
+	background-size: 80% 80%;
+    width: 68px;
+    background-repeat: no-repeat;
+    height: 60px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.portfolio-wrapper:hover .simple{
+	display:block;
+}
+
+@media(max-width:768px){
+	#portfoliolist .portfolio {
+		width: 14.4%;
+	}
+	#filters li span {
+		font-size: 10px;
+	}
+	.portfolio-wrapper {
+		height: 130px;
+	}
+	.simple {
+		padding: 2em 0 0;
+		height: 67%;
+	}
+	.work {
+		min-height: 791px;
+		padding: 2em 0 1em;
+	}
+	.work-top {
+		padding: .5em 0;
+	}
+	div#portfoliolist {
+		padding: .5em 0 0 0;
+	}
+	.work-head h3 {
+		font-size:3.5em;
+	}
+}
+@media(max-width:640px){
+	.work-head h3 {
+		font-size: 3em;
+	}
+	.work {
+		min-height: 703px;
+		padding: 6em 0 3em;
+	}
+	.simple {
+		padding: 0.3em 0 0;
+		height: 64%;
+	}
+}
+@media(max-width:480px){
+	.work {
+		padding: 2em 0 1em;
+	}
+	#filters li span {
+		font-size: 11px;
+	}
+	.work-head h3 {
+		font-size: 2.3em;
+	}
+	#portfoliolist .portfolio {
+
+		width: 30.9%;
+	}
+	.portfolio-wrapper span.arrow {
+		left: 75px;
+	}
+	.simple {
+		padding: 2.5em 0 0;
+		height: 72%;
+	}
+	.by-type ,#filters{
+		float: none;
+	}
+	.by-type h6 {
+		margin: 0.7em 0;
+	}
+	.work-top {
+		padding: 0.5em 0;
+	}
+}
+@media(max-width:320px){
+	.work {
+		padding: 2em 0 1em;
+	}
+	.work-head h3 {
+		font-size: 1.5em;
+	}
+	.work-head p{
+		font-size: 0.9em;
+		padding:1em 0 0;
+		margin-bottom:1.5em;
+		height: 50px;
+		overflow: hidden;
+	}
+	#filters li span {
+		padding: 6px 5px;
+		font-size: 12px;
+	}
+	.by-type h6 {
+		font-size: 1em;
+	}
+	.simple {
+		padding: 0.5em 0 0;
+		height: 63%;
+	}
+	.portfolio-wrapper span.arrow {
+		left: 44px;
+		bottom: 32px;
+	}
+	.portfolio-wrapper p {
+		font-size: 1em;
+		padding: 0.5em 0;
+	}
+	.work {
+		min-height: 759px;
+		padding: 4em 0 2em;
+	}
+}
